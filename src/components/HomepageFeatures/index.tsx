@@ -22,24 +22,26 @@ type GameItem = {
 
 const GameList: GameItem[] = [
   {
-    title: 'The Legend of Zelda: Ocarina of Time / Majora\'s Mask',
-    imagePath: '/img/games/z64.webp',
+    title: 'The Legend of Zelda: Ocarina of Time',
+    imagePath: '/img/games/oot.webp',
     ports: [
       {
         name: 'Ship of Harkinian',
         team: 'Harbour Masters',
-        docsPath: '/docs/ship-of-harkinian',
+        docsPath: '/docs/z64',
         downloadsUrl: 'https://github.com/HarbourMasters/shipwright/releases/latest',
       },
+    ],
+  },
+  {
+    title: 'The Legend of Zelda: Majora\'s Mask',
+    imagePath: '/img/games/mm.webp',
+    ports: [
       {
         name: '2Ship2Harkinian',
         team: '2Ship2Harkinian',
-        docsPath: '/docs/2ship2harkinian',
-        downloadsUrl: 'https://github.com/2ship2harkinian/2ship2harkinian/releases/latest',
-      },
-      {
-        name: 'Ship/2Ship Modding',
         docsPath: '/docs/z64',
+        downloadsUrl: 'https://github.com/2ship2harkinian/2ship2harkinian/releases/latest',
       },
     ],
   },
@@ -103,10 +105,10 @@ const GameList: GameItem[] = [
 // Fisher-Yates shuffle algorithm
 function shuffleArray<T>(array: T[]): T[] {
   const shuffled = [...array];
-  for (let i = shuffled.length - 1; i > 0; i--) {
+  /*for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-  }
+  }*/
   return shuffled;
 }
 
@@ -119,7 +121,7 @@ function PortItem({port}: {port: Port}) {
     <div className={styles.portItem}>
       <div className={styles.portHeader}>
         <h4 className={styles.portName}>{port.name}</h4>
-        <h5 className={styles.portTeam}>{port.team}</h5>
+        <h5 className={styles.portTeam}>{By port.team}</h5>
         {/* <div className={styles.portTags}>
           {port.tags.map((tag, idx) => (
             <PortBadge key={idx} tag={tag} />
