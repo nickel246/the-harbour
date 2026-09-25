@@ -9,7 +9,7 @@ type PortTag = 'Mod Support' | 'Multiplayer' | 'Enhanced Graphics' | 'HD Texture
 
 type Port = {
   name: string;
-  tags: PortTag[];
+  team?: string;
   docsPath?: string;
   downloadsUrl?: string;
 };
@@ -22,31 +22,22 @@ type GameItem = {
 
 const GameList: GameItem[] = [
   {
-    title: 'The Legend of Zelda: Ocarina of Time',
-    imagePath: '/img/games/oot.webp',
+    title: 'The Legend of Zelda: Ocarina of Time / Majora\'s Mask',
+    imagePath: '/img/games/z64.webp',
     ports: [
       {
         name: 'Ship of Harkinian',
-        tags: ['Mod Support', 'Enhanced Graphics', 'Widescreen', 'Native PC'],
-        downloadsUrl: 'https://github.com/HarbourMasters/shipwright/releases',
-        docsPath: '/docs/ship-of-harkinian',
-      },
-    ],
-  },
-  {
-    title: 'The Legend of Zelda: Majora\'s Mask',
-    imagePath: '/img/games/marorasmask.webp',
-    ports: [
-      {
-        name: 'Zelda 64: Recompiled',
-        tags: ['Mod Support', 'Enhanced Graphics', 'Widescreen', 'Native PC'],
-        downloadsUrl: 'https://github.com/Zelda64Recomp/Zelda64Recomp/releases',
+        team: 'Harbour Masters',
+        downloadsUrl: 'https://github.com/HarbourMasters/shipwright/releases/latest',
       },
       {
-        name: '2 Ship 2 Harkinian',
-        tags: ['Mod Support', 'Enhanced Graphics', 'Widescreen', 'Native PC'],
-        docsPath: '/docs/2ship2harkinian',
-        downloadsUrl: 'https://github.com/HarbourMasters/2ship2harkinian/releases',
+        name: '2Ship2Harkinian',
+        team: '2Ship2Harkinian',
+        downloadsUrl: 'https://github.com/2ship2harkinian/2ship2harkinian/releases/latest',
+      },
+      {
+        name: 'Ship/2Ship Modding',
+        docsPath: '/docs/z64',
       },
     ],
   },
@@ -56,8 +47,8 @@ const GameList: GameItem[] = [
     ports: [
       {
         name: 'GhostShip',
-        tags: ['Multiplayer', 'Enhanced Graphics', 'Widescreen', 'Native PC'],
-        downloadsUrl: 'https://github.com/HarbourMasters/ghostship/releases',
+        team: 'Harbour Masters',
+        downloadsUrl: 'https://github.com/HarbourMasters/ghostship/releases/latest',
       },
     ],
   },
@@ -66,14 +57,9 @@ const GameList: GameItem[] = [
     imagePath: '/img/games/mariokart.webp',
     ports: [
       {
-        name: 'Mario Kart 64: Recompiled',
-        tags: ['Multiplayer', 'Enhanced Graphics', 'Widescreen', 'Native PC'],
-        downloadsUrl: 'https://github.com/sonicdcer/MarioKart64Recomp/releases',
-      },
-      {
         name: 'Spaghetti Kart',
-        tags: ['Multiplayer', 'Native PC'],
-        downloadsUrl: 'https://github.com/HarbourMasters/SpaghettiKart/releases',
+        team: 'Harbour Masters',
+        downloadsUrl: 'https://github.com/HarbourMasters/SpaghettiKart/releases/latest',
       },
     ],
   },
@@ -82,9 +68,9 @@ const GameList: GameItem[] = [
     imagePath: '/img/games/banjokazooie.webp',
     ports: [
       {
-        name: 'Banjo: Recompiled',
-        tags: ['Enhanced Graphics', 'Widescreen', 'Native PC'],
-        downloadsUrl: 'https://github.com/BanjoRecomp/BanjoRecomp/releases'
+        name: 'Lighthouse',
+        team: 'IsleOPorts',
+        downloadsUrl: 'https://github.com/IsleOPorts/Lighthouse/releases/latest'
       },
     ],
   },
@@ -93,47 +79,20 @@ const GameList: GameItem[] = [
     imagePath: '/img/games/starfox.webp',
     ports: [
       {
-        name: 'Starfox 64: Recompiled',
-        tags: ['Multiplayer', 'Enhanced Graphics', 'Widescreen', 'Native PC'],
-        downloadsUrl: 'https://github.com/sonicdcer/Starfox64Recomp/releases',
-      },
-      {
         name: 'Starship',
-        tags: ['Mod Support', 'Enhanced Graphics', 'Widescreen', 'Native PC'],
-        downloadsUrl: 'https://github.com/HarbourMasters/Starship/releases',
+        team: 'Harbour Masters',
+        downloadsUrl: 'https://github.com/HarbourMasters/Starship/releases/latest',
       },
     ],
   },
   {
-    title: 'Goemon\'s Great Adventure',
-    imagePath: '/img/games/goemon64.jpg',
+    title: 'Paper Mario 64',
+    imagePath: '/img/games/papermario.webp',
     ports: [
       {
-        name: 'Goemon 64: Recompiled',
-        tags: ['Multiplayer', 'Enhanced Graphics', 'Widescreen', 'Native PC'],
-        downloadsUrl: 'https://github.com/klorfmorf/Goemon64Recomp/releases',
-      },
-    ],
-  },
-  {
-    title: 'Dinosaur Planet',
-    imagePath: '/img/games/dinosaurplanet.jpg',
-    ports: [
-      {
-        name: 'Dinosaur Planet: Recompiled',
-        tags: ['Enhanced Graphics', 'Widescreen', 'Native PC'],
-        downloadsUrl: 'https://github.com/DinosaurPlanetRecomp/dino-recomp/releases',
-      },
-    ],
-  },
-  {
-    title: 'Perfect Dark',
-    imagePath: '/img/games/perfectdark.webp',
-    ports: [
-      {
-        name: 'Perfect Dark port',
-        tags: ['Multiplayer', 'Enhanced Graphics', 'Widescreen', 'Native PC'],
-        downloadsUrl: 'https://github.com/fgsfdsfgs/perfect_dark/releases',
+        name: 'Paperboat',
+        team: 'Harbour Masters',
+        downloadsUrl: 'https://github.com/HarbourMasters/PaperBoat/releases/latest',
       },
     ],
   },
@@ -158,6 +117,7 @@ function PortItem({port}: {port: Port}) {
     <div className={styles.portItem}>
       <div className={styles.portHeader}>
         <h4 className={styles.portName}>{port.name}</h4>
+        <h5 className={styles.portTeam}>{port.team}</h5>
         {/* <div className={styles.portTags}>
           {port.tags.map((tag, idx) => (
             <PortBadge key={idx} tag={tag} />
