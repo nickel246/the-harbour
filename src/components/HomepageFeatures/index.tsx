@@ -12,6 +12,7 @@ type Port = {
   team?: string;
   docsPath?: string;
   downloadsUrl?: string;
+  modpageUrl?: string;
 };
 
 type GameItem = {
@@ -30,6 +31,7 @@ const GameList: GameItem[] = [
         team: 'Harbour Masters',
         docsPath: '/docs/z64',
         downloadsUrl: 'https://github.com/HarbourMasters/shipwright/releases/latest',
+        modpageUrl: 'https://gamebanana.com/games/16121'
       },
     ],
   },
@@ -42,39 +44,7 @@ const GameList: GameItem[] = [
         team: '2Ship2Harkinian',
         docsPath: '/docs/z64',
         downloadsUrl: 'https://github.com/2ship2harkinian/2ship2harkinian/releases/latest',
-      },
-    ],
-  },
-  {
-    title: 'Super Mario 64',
-    imagePath: '/img/games/sm64.webp',
-    ports: [
-      {
-        name: 'GhostShip',
-        team: 'Harbour Masters',
-        downloadsUrl: 'https://github.com/HarbourMasters/ghostship/releases/latest',
-      },
-    ],
-  },
-  {
-    title: 'Mario Kart 64',
-    imagePath: '/img/games/mariokart.webp',
-    ports: [
-      {
-        name: 'Spaghetti Kart',
-        team: 'Harbour Masters',
-        downloadsUrl: 'https://github.com/HarbourMasters/SpaghettiKart/releases/latest',
-      },
-    ],
-  },
-  {
-    title: 'Banjo-Kazooie',
-    imagePath: '/img/games/banjokazooie.webp',
-    ports: [
-      {
-        name: 'Lighthouse',
-        team: 'IsleOPorts',
-        downloadsUrl: 'https://github.com/IsleOPorts/Lighthouse/releases/latest'
+        modpageUrl: 'https://gamebanana.com/games/20371'
       },
     ],
   },
@@ -86,6 +56,43 @@ const GameList: GameItem[] = [
         name: 'Starship',
         team: 'Harbour Masters',
         downloadsUrl: 'https://github.com/HarbourMasters/Starship/releases/latest',
+        modpageUrl: 'https://gamebanana.com/games/21612'
+      },
+    ],
+  },
+  {
+    title: 'Mario Kart 64',
+    imagePath: '/img/games/mariokart.webp',
+    ports: [
+      {
+        name: 'Spaghetti Kart',
+        team: 'Harbour Masters',
+        downloadsUrl: 'https://github.com/HarbourMasters/SpaghettiKart/releases/latest',
+        modpageUrl: 'https://gamebanana.com/games/22970'
+      },
+    ],
+  },
+  {
+    title: 'Super Mario 64',
+    imagePath: '/img/games/sm64.webp',
+    ports: [
+      {
+        name: 'GhostShip',
+        team: 'Harbour Masters',
+        downloadsUrl: 'https://github.com/HarbourMasters/ghostship/releases/latest',
+        modpageUrl: 'https://gamebanana.com/games/24131'
+      },
+    ],
+  },
+  {
+    title: 'Banjo-Kazooie',
+    imagePath: '/img/games/banjokazooie.webp',
+    ports: [
+      {
+        name: 'Lighthouse',
+        team: 'IsleOPorts',
+        downloadsUrl: 'https://github.com/IsleOPorts/Lighthouse/releases/latest',
+        modpageUrl: 'https://gamebanana.com/games/25172'
       },
     ],
   },
@@ -97,6 +104,7 @@ const GameList: GameItem[] = [
         name: 'Paperboat',
         team: 'Harbour Masters',
         downloadsUrl: 'https://github.com/HarbourMasters/PaperBoat/releases/latest',
+        modpageUrl: 'https://gamebanana.com/games/25857'
       },
     ],
   },
@@ -141,6 +149,13 @@ function PortItem({port}: {port: Port}) {
              className="button button--secondary button--sm"
              to={port.docsPath}>
              Docs
+           </Link>
+         )}
+         {port.docsPath && (
+           <Link
+             className="button button--primary button--sm"
+             to={port.modpageUrl}>
+             Mods
            </Link>
          )}
        </div>
