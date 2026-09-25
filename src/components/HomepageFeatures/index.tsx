@@ -28,11 +28,13 @@ const GameList: GameItem[] = [
       {
         name: 'Ship of Harkinian',
         team: 'Harbour Masters',
+        docsPath: '/docs/ship-of-harkinian',
         downloadsUrl: 'https://github.com/HarbourMasters/shipwright/releases/latest',
       },
       {
         name: '2Ship2Harkinian',
         team: '2Ship2Harkinian',
+        docsPath: '/docs/2ship2harkinian',
         downloadsUrl: 'https://github.com/2ship2harkinian/2ship2harkinian/releases/latest',
       },
       {
