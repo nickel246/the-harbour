@@ -121,7 +121,7 @@ function PortItem({port}: {port: Port}) {
     <div className={styles.portItem}>
       <div className={styles.portHeader}>
         <h4 className={styles.portName}>{port.name}</h4>
-        <h5 className={styles.portTeam}>{By port.team}</h5>
+        <h5 className={styles.portTeam}>{"By "+port.team}</h5>
         {/* <div className={styles.portTags}>
           {port.tags.map((tag, idx) => (
             <PortBadge key={idx} tag={tag} />
