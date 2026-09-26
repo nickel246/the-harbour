@@ -144,18 +144,18 @@ function PortItem({port}: {port: Port}) {
              Downloads
            </Link>
          )}
-         {port.docsPath && (
+         {port.modpageUrl && (
            <Link
              className="button button--secondary button--sm"
-             to={port.docsPath}>
-             Docs
+             to={port.modpageUrl}>
+             Mods
            </Link>
          )}
          {port.docsPath && (
            <Link
              className="button button--primary button--sm"
-             to={port.modpageUrl}>
-             Mods
+             to={port.docsPath}>
+             Docs
            </Link>
          )}
        </div>
