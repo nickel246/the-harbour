@@ -51,7 +51,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/nickel246/the-harbour/tree/restructure/',
+            'https://github.com/nickel246/the-harbour/tree/restructure-backup/',
         },
         blog: {
           showReadingTime: true,
@@ -62,7 +62,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/nickel246/the-harbour/tree/restructure/',
+            'https://github.com/nickel246/the-harbour/tree/restructure-backup/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -89,7 +89,7 @@ const config: Config = {
         //   label: 'Tutorial',
         // },
         {
-          href: 'https://github.com/nickel246/the-harbour/tree/restructure',
+          href: 'https://github.com/nickel246/the-harbour/tree/restructure-backup',
           label: 'GitHub',
           position: 'right',
         },
@@ -133,7 +133,7 @@ const config: Config = {
     //         },
     //         {
     //           label: 'GitHub',
-    //           href: 'https://github.com/nickel246/the-harbour/tree/restructure',
+    //           href: 'https://github.com/nickel246/the-harbour/tree/restructure-backup',
     //         },
     //       ],
     //     },
