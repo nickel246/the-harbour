@@ -16,13 +16,14 @@ Creates a shiny specular highlight on a mesh by layering a second transparent, e
 <img src={FakeSpecularExample} alt="Fake specular effect example" />
 
 
-1. Duplicate the mesh
+### 1. Duplicate the mesh
 
 In edit mode, select the mesh you want a shine on and duplicate it. Do not move the duplicate.
 
 <img src={image1} alt="Duplicating the mesh in edit mode" width="1000" />
 
-2. Assign a new material
+
+### 2. Assign a new material
 
 Create a new material, select the `Environment Mapped Transparent` preset, and assign it to the duplicated mesh. Import your shine texture — textures with an alpha channel work best.
 
@@ -35,14 +36,16 @@ This is the texture used in this tutorial. A soft radial gradient with alpha wor
 <img src={Shine32xSoft} alt="Shine32xSoft sample texture" />
 :::
 
-3. Adjust the Color Combiner
+
+### 3. Adjust the Color Combiner
 
 In the Color Combiner, change **Cycle 1 D Alpha** from `1` to `Texture 0 Alpha`.
 
 <img src={image4} alt="Color Combiner before change" width="1000" />
 <img src={image5} alt="Color Combiner after change" width="1000" />
 
-4. Set the render mode
+
+### 4. Set the render mode
 
 In the lower settings (make sure **Show Simplified UI** is disabled), change **Render Mode Cycle 2** to `Transparent Decal`.
 
