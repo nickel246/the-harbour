@@ -18,9 +18,10 @@ Information and guides for the built-in randomizer
 
 ## Mod Development
 SoH and 2Ship support drag-and-drop asset mods (models, textures, text, audio) but not yet code mods. All available documentation on creating mods for either port can be found below.
-- ### [Model Replacement](../z64/mods/models/index.md)
-- ### [Texture Replacement](../z64/mods/textures/index.md)
-- ### [Audio Replacement](../z64/mods/audio/index.md)
-- ### [Text Replacement](../z64/mods/text/index.md)
-- ### [Animation Replacement](../z64/mods/anim/index.md)
-- ### [Code Modding (limited)](../z64/mods/code/index.md)
+- ### [Model Replacement](../z64/models/index.md)
+- ### [Texture Replacement](../z64/textures/index.md)
+- ### [Audio Replacement](../z64/audio/index.md)
+- ### [Text Replacement](../z64/text/index.md)
+- ### [Animation Replacement](../z64/anim/index.md)
+- ### [Code Modding (limited)](../z64/code/index.md)
+- ### [O2R Format](../z64/o2r-format/index.md)
