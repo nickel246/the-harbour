@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Mod Development
+# Home
 SoH and 2Ship support drag-and-drop asset mods (models, textures, text, audio) but not yet code mods. All available documentation on creating mods for either port can be found below.
 - ### [Model Replacement](./models/index.md)
 - ### [Texture Replacement](./textures/index.md)
