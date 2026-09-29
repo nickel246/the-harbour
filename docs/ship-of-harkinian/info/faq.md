@@ -18,5 +18,5 @@ SoH major releases are named after sci-fi film characters from 1982 (apparently 
 This project is a labor of love crafted by passionate volunteers who dedicate their spare time to making it happen without any compensation. The workflow is largely flexible, allowing individuals to work on the tasks that they find most interesting, with a few key milestones that are prioritized for stable releases. By avoiding strict deadlines, we prevent the creation of unrealistic expectations that would only lead to disappointment, and most of the time, the devs themselves don't know until just before something happens.
 
 ## Can I Load existing ROM Hacks?
-No. Since Ship of Harkinian is a ports, not an emulator, it cannot run ROMs. ROMs are only used in order to extract game assets.
+No. Since Ship of Harkinian is a port, not an emulator, it cannot run ROMs. ROMs are only used in order to extract game assets.
 If any romhacks get support for Ship of Harkinian in the future, it will be done by the romhack creators recoding the hacks into SoH's codebase
