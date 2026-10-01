@@ -2,7 +2,9 @@
 sidebar_position: 1
 ---
 
-# Home - Ship of Harkinian
+# Home
+
+## Ship of Harkinian
 A PC Port For The Legend of Zelda: Ocarina of Time
 
 ## General Info and Resources

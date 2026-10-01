@@ -2,7 +2,9 @@
 sidebar_position: 1
 ---
 
-# Home - 2Ship2Harkinian
+# Home
+
+## 2Ship2Harkinian
 A PC Port for The Legend of Zelda: Majora's Mask
 
 ## General Info and Resources
