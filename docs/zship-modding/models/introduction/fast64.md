@@ -34,7 +34,7 @@ By clicking on the tab labeled Fast64 on the right (if you don’t see it try pr
 Here in the Fas64 Global Settings you can change your game depending on the port you want to mod for.  For SoH and 2Ship, you want to just keep it on OOT.
 Another useful setting here is the “Prefer RGBA Over CI”.  As you set textures, Fast64 tries to auto pick the most appropriate texture types, which sometimes might not be what you want, like in the case of the CI format which is really only useful for those who want to stay faithful to N64 limitations.  By contrast the RGBA formats are the typical full color formats you would expect, so those might be preferable for your purposes.
 
-<img src={f64_gloal} alt="Fast64 Global Settings" width="1000" />
+<img src={f64_global} alt="Fast64 Global Settings" width="1000" />
 
 The other useful settings are here in the F3D Material Converter, where you can automatically convert standard materials into the F3D Materials that the ports use.  You can also recreate your materials or reload material presets if they seem bugged.
 
