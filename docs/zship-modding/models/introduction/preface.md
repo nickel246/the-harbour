@@ -3,15 +3,18 @@ sidebar_position: 1
 ---
 
 # Preface
-TODO
+Making a model mod for Ship of Harkinian / 2 Ship 2 Harkinian
 
-## Texture Sheets Are a Thing of the Future
+## Introduction
+Models in N64 games are stored as DisplayLists, or DLs as we often call them.  The main objective of any model mod is simply to export a model from blender with the right DL name and pathing to replace a pre-existing asset.
 
-When OoT/MM were designed, the modern practice of texture sheets were not standard; the N64 is better at handling several small textures in multiple materials for one object than one sheet of multiple combined textures for one or more objects. 
-
-While not strictly *required*, it is best to work the way the game expects when possible, and doing things in this way will help to keep things in the "SD" range without having to compromise on detail.
-
-**Requirements:**
-- Limit custom textures to power-of-two dimensions
-- No bigger than 64x64 for export from Blender
-- 32x32 is recommended as 64x64 won't always work correctly
+## Setup
+Before you can get started with your model mod, you’re going to need to get the right things ready first:
+- ### Blender 3.2 - 5.1.2
+https://www.blender.org/ 
+Even if you don’t do your modelling in Blender normally, the add-on we’re going to use for importing and exporting assets is only compatible with Blender, so either way you still need it
+- ### Fast64
+https://github.com/HarbourMasters/fast64 
+The Blender add-on that allows us to import and export assets for SoH and 2Ship.  More details on this in the next section
+ - ### Source O2R
+An oot.o2r or mm.o2r generated from a recent version of SoH or 2Ship respectively.  We use this in order to import game assets into Blender.
