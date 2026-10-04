@@ -11,11 +11,11 @@ Models in N64 games are stored as DisplayLists, or DLs as we often call them.  T
 ## Setup
 Before you can get started with your model mod, you’re going to need to get the right things ready first:
 - ### Blender 3.2 - 5.1.2
-  https://www.blender.org/
+  https://www.blender.org/  
   Even if you don’t do your modelling in Blender normally, the add-on we’re going to use for importing and exporting assets is only compatible with Blender, so either way you still need it
 
 - ### Fast64
-  https://github.com/HarbourMasters/fast64
+  https://github.com/HarbourMasters/fast64  
   The Blender add-on that allows us to import and export assets for SoH and 2Ship.  More details on this in the next section
 
 - ### Source O2R
