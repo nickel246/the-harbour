@@ -6,9 +6,9 @@ sidebar_position: 1
 Replacing 3d models is one of the primary ways to mod the ships, and is also one of the most involved. As such, the following tutorials are categorized by their difficulty level.
 Please note that information about the Prelude editor is beyond the scope of these guides, but you can find more information about it on the [official Prelude site](https://prelude.roborich.com/)
 
-## Introduction and Setup
+## Introduction to Model Replacement
 If you're just getting into modding SoH or 2Ship, these guides here will help get you started.
-- [Preface](./introduction/preface.md)
+- [Preface](./introduction/preface.md) - An introduction to model modding
 - [Fast64](./introduction/fast64.md) - The main tool used in model replacement
 
 ## Basics of Model Replacement
@@ -17,13 +17,15 @@ After you're finished with the introduction, you can then begin with your model 
 - [Static Model Replacement](./basics/static-models/index.md)
 - [Scene Replacement](./basics/scenes/index.md)
 
-## Advanced Guides
+## Advanced Model Guides
+Guides for more specific techniques for model mods. These pages will assume you already understand the basics and will focus on building on those foundations.
 - For Player Models
   - [Link Flipbooks](./advanced/flipbooks/index.md)
   - [Rigged DLs](./advanced/rigged-dls/index.md)
   - [Attaching Static DLs to Link's Skeleton](./advanced/attaching-static-dls/index.md)
 - General
   - [Segment Calls](./advanced/segment-calls/index.md) - Set up your models to allow for specific effects found in the original game (ex texture scrolling, fade-in effects, etc)
+  - [Mirror Shield Effects](./advanced/mirror-shield-effects/index.md)
   - [Vertex Snapping Fix](./advanced/vertex-snapping-fix/index.md) - Apply a modifier to your models to bypass vertex snapping issues
   - [Custom Bunny Hoods](./advanced/bunny-hood/index.md)
   - [Dark Link Equipment System](./advanced/dark-link/index.md)

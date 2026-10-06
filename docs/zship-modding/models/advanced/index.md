@@ -9,6 +9,7 @@ sidebar_position: 3
   - [Attaching Static DLs to Link's Skeleton](./attaching-static-dls/index.md)
 - General
   - [Segment Calls](./segment-calls/index.md) - Set up your models to allow for specific effects found in the original game (ex texture scrolling, fade-in effects, etc)
+  - [Mirror Shield Effects](./mirror-shield-effects/index.md)
   - [Vertex Snapping Fix](./vertex-snapping-fix/index.md) - Apply a modifier to your models to bypass vertex snapping issues
   - [Custom Bunny Hoods](./bunny-hood/index.md)
   - [Dark Link Equipment System](./dark-link/index.md)
