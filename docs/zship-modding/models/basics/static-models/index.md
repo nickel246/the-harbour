@@ -46,7 +46,12 @@ Path refers to the directory on your computer that you would like to export your
 
 Optionally you can also select the "Optimize + Inline Materials" option if you want cleaner exports.  Note that this will break dynamic color support if you have that set up.
 
-Finally, click on the "Export DL" button to export your model.
+Finally, click on the "Export DL" button to export your model.  If this is the last thing you wanted to export and are ready to pack your mod, navgate to your export directory in any file explorer and select all the files and directories you would like to pack, including your `alt` folder, `CosmeticEntries` file if you have one, etc.  Rename the file extension into `.o2r` and name your mod whatever you want.  Your mod is now complete and ready to test in-game by dropping it into your mods folder.
+
+:::note
+Mods are packed as files called "O2Rs", which in reality are just renamed ZIP archives.  
+Older versions of SoH (lower than 9.0.0) only support "OTR" mods, which are renamed MPQ files.  You can pack your files into an OTR using the [Retro program](https://github.com/HarbourMasters/retro/releases/latest) and edit pre-existing OTR mods with a program called "Ladik's MPQ Editor"
+:::
 
 
 ## Alt Equipment (Custom Items)
