@@ -29,11 +29,10 @@ The following is the basic workflow for making a model mod; more details on each
 1. Import a vanilla model from a source O2R.
 2. Line up your custom model with the imported model and, if doing a skeleton replacement, set up your model's vertex groups. 
 3. Export your model from Blender into the proper directory.  You should be exporting to a folder named `alt` as to enable the alt toggling feature which allows players to turn your mod on and off at the press of a button.  This is required if you want to post your mod to gamebanana.
-4. Find your `alt` folder in any file manager and compress it into a ZIP.  
+4. In any file explorer, navgate to your export directory and select all the files and directories you would like to pack, including your `alt` folder, `CosmeticEntries` file if you have one, etc.  
+5. Rename the file extension into `.o2r` and name your mod whatever you want.
 
 :::note
 Mods are packed as files called "O2Rs", which in reality are just renamed ZIP archives.  
 Older versions of SoH (lower than 9.0.0) only support "OTR" mods, which are renamed MPQ files.  You can pack your files into an OTR using the [Retro program](https://github.com/HarbourMasters/retro/releases/latest) and edit pre-existing OTR mods with a program called "Ladik's MPQ Editor"
 :::
-
-5. Rename the file extension into `.o2r` and name your mod whatever you want.
