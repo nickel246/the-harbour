@@ -15,8 +15,9 @@ Before you can get started with your model mod, you’re going to need to get th
   https://github.com/HarbourMasters/fast64  
   The Blender add-on that allows us to import and export assets for SoH and 2Ship.  More details on this in the next section.
 
-- ### Source O2R
-  An oot.o2r or mm.o2r generated from a recent version of SoH or 2Ship respectively.  We use this in order to import game assets into Blender.
+- ### Source O2R *or* Decompilation
+  1. An oot.o2r or mm.o2r generated from a recent version of SoH or 2Ship respectively.  We use this in order to import game assets into Blender.  This is much easier to obtain than a decompilation, but cannot be used for scene importing.
+  2. A decompilation of [Ocarina of Time](https://github.com/zeldaret/oot#installation) or [Majora's Mask](https://github.com/zeldaret/mm#installation).  The setup for this is much more involved and requires a Linux setup.  You can find the specific installation instructions by clicking on either link.  Unlike using a source o2r, there are no inherent limitations with importing when using a decomp.
 
 ## Basic Information
 A brief introduction to the process for making model mods

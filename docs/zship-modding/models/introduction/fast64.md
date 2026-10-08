@@ -44,10 +44,13 @@ The other useful settings are here in the F3D Material Converter, where you can 
 ### Z64 Tab
 This is where all your actual importing and exporting will take place.  The individual importers and exporters will be covered in their respective guides, but there are still a couple settings here that are important to know no matter what type of model mod you want to make.
 
-Here in the Workplace Settings is where you complete the setup for importing assets.  If you have a decompilation of OoT or MM handy you may use that for importing, but for these guides we will be importing from O2Rs since they’re simpler to obtain (you literally have to generate one in order to even play the port in the first place lol) and just overall easier to work with.  
-Start by clicking the “Use O2R Import” checkbox, then select the file icon in the O2R Path box and navigate to your OoT or MM source O2R (oot.o2r, oot_mq.o2r, mm.o2r).  You can ignore the “Game Version” box.  If you selected a MM O2R then also go down and select the “Enable MM Features” checkbox.
+Here in the Workplace Settings is where you complete the setup for importing assets:  
+
+If you want to use a source O2R for importing, Start by clicking the "Use O2R Import" checkbox, then select the file icon in the O2R Path box and navigate to your OoT or MM source O2R (oot.o2r, oot_mq.o2r, mm.o2r).  You can ignore the “Game Version” box.  If you selected a MM O2R then also go down and select the “Enable MM Features” checkbox.  
 
 <img src={workspace_settings} alt="Workspace Settings" width="400" />
+
+If you want to use a decomp of OoT or MM for importing, leave "Use O2R Import" checked and in the Decomp Path box navigate to the root of your decompilation (either `oot` or `mm`).  If you selected a Majora's Mask decomp, select the "Enable MM Features" checkbox.  Finally, click on the "Game Version" dropdown and select the rom version that you decompiled.
 
 
 ### F3D Materials
@@ -80,15 +83,15 @@ Fast64 supports 9 different texture formats, each with their own use cases.  If 
 
 | Texture Format | Abbreviation | Description | Notes |
 | -------------- | ------------ | ----------- | ----- |
-| Intensity 4-bit | i4 | 4 bits of B&W |
-| Intensity 8-bit | i8 | 8 bits of B&W | Standard for non-color textures | If used in transparent material, black is interpreted as transparent
-| Intensity Alpha 4-bit | ia4 | 2 bits of B&W, 2 bits of Alpha |
-| Intensity Alpha 8-bit | ia8 | 4 bits of B&W, 4 bits of Alpha |
-| Intensity Alpha 16-bit | ia16 | 8 bits of B&W, 8 bits of Alpha |
+| Intensity 4-bit | i4 | 4 bits of B&W; 16 shades | If used in transparent material, black is interpreted as transparent |
+| Intensity 8-bit | i8 | 8 bits of B&W; 256 shades | Standard for non-color textures.  If used in transparent material, black is interpreted as transparent |
+| Intensity Alpha 4-bit | ia4 | 2 bits of B&W, 2 bits of Alpha; 4 shades with 4 levels of transparency |
+| Intensity Alpha 8-bit | ia8 | 4 bits of B&W, 4 bits of Alpha; 16 shades with 16 levels of tranparency |
+| Intensity Alpha 16-bit | ia16 | 8 bits of B&W, 8 bits of Alpha; 256 shades with 256 levels of transparency |
 | Color Index 4-bit | ci4 | See Explanation Below |
 | Color Index 8-bit | ci8 | See Explanation Below |
-| RGBA 16-bit | rgba16 | 5 bits of red, 5 bits of blue, 5 bits of green, 1 bit of Alpha | Default for colored textures.  1 bit of alpha means pixels are either fully opaque or fully transparent; no in-between |
-| RGBA 32-bit | rgba32 | 8 bits of red, 8 bits of blue, 8 bits of green, 8 bits of alpha | 
+| RGBA 16-bit | rgba16 | 5 bits of red, 5 bits of blue, 5 bits of green, 1 bit of Alpha; 32,768 unique colors | Default for colored textures.  1 bit of alpha means pixels are either fully opaque or fully transparent; no in-between |
+| RGBA 32-bit | rgba32 | 8 bits of red, 8 bits of blue, 8 bits of green, 8 bits of alpha; 16,777,216 unique colors and 256 levels of transparency | 
 
 :::tip
 **Color Indexed Textures**
