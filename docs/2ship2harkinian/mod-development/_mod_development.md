@@ -1,4 +1,4 @@
-2 Ship 2 Harkinian supports drag-and-drop asset mods (models, textures, text, audio) but not yet code mods. All available documentation on creating mods for either port can be found below.
+2 Ship 2 Harkinian supports drag-and-drop asset mods (models, textures, text, audio) but not yet code mods. All available documentation on creating mods can be found below.
 - ### [Model Replacement](/docs/2ship2harkinian/mod-development/models/index.mdx)
 - ### [Texture Replacement](/docs/2ship2harkinian/mod-development/textures.md)
 - ### [Audio Replacement](/docs/2ship2harkinian/mod-development/audio)

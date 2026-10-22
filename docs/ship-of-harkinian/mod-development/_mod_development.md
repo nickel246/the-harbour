@@ -1,10 +1,8 @@
-import Link from '@docusaurus/Link';
-
-SoH and 2Ship support drag-and-drop asset mods (models, textures, text, audio) but not yet code mods. All available documentation on creating mods for either port can be found below.
-- ### <Link href={`/docs/${props.name}/mod-development/models/`}>Model Replacement</Link>
-- ### <Link to={`/docs/${props.name}/mod-development/textures`}>Texture Replacement</Link>
-- ### <Link to={`/docs/${props.name}/mod-development/audio/`}>Audio Replacement</Link>
-- ### <Link to={`/docs/${props.name}/mod-development/text/`}>Text Replacement</Link>
-- ### <Link to={`/docs/${props.name}/mod-development/anim/`}>Animation Replacement</Link>
-- ### <Link to={`/docs/${props.name}/mod-development/code`}>Code Modding (limited)</Link>
-- ### <Link to={`/docs/${props.name}/mod-development/o2r-format/`}>O2R Format</Link>
+Ship of Harkinian supports drag-and-drop asset mods (models, textures, text, audio) but not yet code mods. All available documentation on creating mods can be found below.
+- ### [Model Replacement](/docs/ship-of-harkinian/mod-development/models/index.mdx)
+- ### [Texture Replacement](/docs/ship-of-harkinian/mod-development/textures.md)
+- ### [Audio Replacement](/docs/ship-of-harkinian/mod-development/audio)
+- ### [Text Replacement](/docs/ship-of-harkinian/mod-development/text/index.md)
+- ### [Animation Replacement](/docs/ship-of-harkinian/mod-development/anim/index.md)
+- ### [Code Modding (limited)](/docs/ship-of-harkinian/mod-development/code.md)
+- ### [O2R Format](/docs/ship-of-harkinian/mod-development/o2r-format/index.md)
