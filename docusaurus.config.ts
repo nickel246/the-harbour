@@ -8,7 +8,7 @@ const config: Config = {
   title: 'The Harbour',
   tagline: 'The home page for all things porting',
   favicon: 'img/favicon.ico',
-
+  
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -53,21 +53,6 @@ const config: Config = {
           editUrl:
             'https://github.com/nickel246/the-harbour/tree/model-tutorials/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/nickel246/the-harbour/tree/model-tutorials/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -82,15 +67,100 @@ const config: Config = {
     navbar: {
       title: 'The Harbour',
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
+        // Common
         {
-          href: 'https://github.com/nickel246/the-harbour/tree/model-tutorials',
-          label: 'GitHub',
+          type: 'dropdown',
+          label: 'Ports',
+          position: 'left',
+          items: [
+            {
+              label: 'Ship of Harkinian',
+              to: '/docs/ship-of-harkinian/info/',
+            },
+            {
+              label: '2Ship2Harkinian',
+              to: '/docs/2ship2harkinian/info/',
+            },
+          ],
+        },
+
+        // Port Tabs
+        {
+          type: 'custom-conditional-navbar-item',
+          label: 'About',
+          to: [
+            '/docs/ship-of-harkinian/info/',
+            '/docs/2ship2harkinian/info/',
+          ],
+          showIn: [
+            'docs/ship-of-harkinian',
+            'docs/2ship2harkinian',
+          ],
+          position: 'left',
+        },
+        {
+          type: 'custom-conditional-navbar-item',
+          label: 'Randomizer',
+          to: [
+            '/docs/ship-of-harkinian/randomizer/',
+            '/docs/2ship2harkinian/randomizer/',
+          ],
+          showIn: [
+            'docs/ship-of-harkinian',
+            'docs/2ship2harkinian',
+          ],
+          position: 'left',
+        },
+        {
+          type: 'custom-conditional-navbar-item',
+          label: 'Mod Development',
+          to: [
+            '/docs/ship-of-harkinian/mod-development/',
+            '/docs/2ship2harkinian/mod-development/',
+          ],
+          showIn: [
+            'docs/ship-of-harkinian',
+            'docs/2ship2harkinian',
+          ],
+          position: 'left',
+        },
+        {
+          type: 'custom-conditional-navbar-item',
+          label: 'Github',
+          href: [
+            'https://github.com/HarbourMasters/Shipwright/',
+            'https://github.com/2ship2harkinian/2ship2harkinian',
+          ],
+          showIn: [
+            'docs/ship-of-harkinian',
+            'docs/2ship2harkinian',
+          ],
+          position: 'right',
+        },
+        {
+          type: 'custom-conditional-navbar-item',
+          label: 'Discord',
+          href: [
+            'https://discord.gg/shipofharkinian',
+            'https://discord.com/invite/sxrPyuh697',
+          ],
+          showIn: [
+            'docs/ship-of-harkinian',
+            'docs/2ship2harkinian',
+          ],
+          position: 'right',
+        },
+        {
+          type: 'custom-conditional-navbar-item',
+          label: 'Mod Library',
+          href: [
+            'https://gamebanana.com/games/16121',
+            'https://gamebanana.com/games/20371',
+          ],
+          showIn: [
+            'docs/ship-of-harkinian',
+            'docs/2ship2harkinian',
+          ],
           position: 'right',
         },
       ],
