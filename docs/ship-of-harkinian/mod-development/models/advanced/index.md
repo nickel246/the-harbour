@@ -6,4 +6,4 @@ import Advanced from './_advanced.md'
 
 # Advanced Guides
 
-<Advanced name="ship-of-harkinian"/> 
+<Advanced/> 
