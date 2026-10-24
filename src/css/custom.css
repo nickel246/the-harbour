@@ -43,6 +43,8 @@
   --ifm-link-hover-color: var(--ifm-color-primary);
 
   --docusaurus-highlighted-code-line-bg: rgba(235, 128, 43, 0.12);
+
+  --game-card-border-color: #dbdde1; 
 }
 
 /* Dark mode uses the brand colors as-is; orange clears 6.80:1 on the SoH background. */
@@ -68,6 +70,8 @@
   --ifm-code-background: var(--soh-bg-light-accent);
 
   --docusaurus-highlighted-code-line-bg: rgba(235, 128, 43, 0.18);
+
+  --game-card-border-color: #2e343b;
 }
 
 /* Righteous is a display face: brand and page titles only, never body or long headings. */
