@@ -127,6 +127,7 @@ const config: Config = {
         {
           type: 'custom-conditional-navbar-item',
           label: 'Github',
+          graphic: 'navbar-github-link',
           href: [
             'https://github.com/HarbourMasters/Shipwright/',
             'https://github.com/2ship2harkinian/2ship2harkinian',
@@ -140,6 +141,7 @@ const config: Config = {
         {
           type: 'custom-conditional-navbar-item',
           label: 'Discord',
+          graphic: 'navbar-discord-link',
           href: [
             'https://discord.gg/shipofharkinian',
             'https://discord.com/invite/sxrPyuh697',
@@ -153,6 +155,7 @@ const config: Config = {
         {
           type: 'custom-conditional-navbar-item',
           label: 'Mod Library',
+          graphic: 'navbar-gamebanana-link',
           href: [
             'https://gamebanana.com/games/16121',
             'https://gamebanana.com/games/20371',
