@@ -131,10 +131,12 @@ const config: Config = {
           href: [
             'https://github.com/HarbourMasters/Shipwright/',
             'https://github.com/2ship2harkinian/2ship2harkinian',
+            'https://github.com/garrettjoecox/the-harbour'
           ],
           showIn: [
             'docs/ship-of-harkinian',
             'docs/2ship2harkinian',
+            'the-harbour/$',
           ],
           position: 'right',
         },

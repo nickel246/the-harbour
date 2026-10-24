@@ -25,7 +25,7 @@ export default function ConditionalNavbarItem({ label, graphic, to, href, showIn
     let locationIndex = -1;
     if (typeof showIn !== 'string') { // if showIn is an array, check if current location is valid
         for (let i = 0; i < showIn.length; i++) {
-            if (currLocation.includes(showIn[i])) { // check if current location is valid
+            if (currLocation.search(new RegExp(showIn[i])) >= 1) { // check if current location is valid
                 locationIndex = i;
                 break;
             }
