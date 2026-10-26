@@ -96,8 +96,8 @@ The [Link Flipbooks spreadsheet](https://docs.google.com/spreadsheets/d/1Yc3b-BR
 | objects/object_link_child | gLinkChildEyesOpenTex | Eyes open |
 | objects/object_link_child | gLinkChildEyesHalfTex | Eyes half-open (mid-blink) |
 | objects/object_link_child | gLinkChildEyesClosedfTex | Eyes closed |
-| objects/object_link_child | gLinkChildEyesRollRightTex | Eyes facing to the RIGHT of the image |
-| objects/object_link_child | gLinkChildEyesRollLeftTex | Eyes facing to the LEFT of the image |
+| objects/object_link_child | gLinkChildEyesRollRightTex | Eyes facing to the LEFT of the image |
+| objects/object_link_child | gLinkChildEyesRollLeftTex | Eyes facing to the RIGHT of the image |
 | objects/object_link_child | gLinkChildEyesUnk1Tex | Eyes looking down |
 | objects/object_link_child | gLinkChildEyesUnk2Tex | Eyes closed hard / wincing |
 | objects/object_link_child | gLinkChildEyesShockTex | Eyes wide open |
