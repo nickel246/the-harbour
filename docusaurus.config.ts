@@ -86,7 +86,7 @@ const config: Config = {
 
         // Port Tabs
         {
-          type: 'custom-conditional-navbar-item',
+          type: 'custom-conditionalItem',
           label: 'About',
           to: [
             '/docs/ship-of-harkinian/info/',
@@ -99,7 +99,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          type: 'custom-conditional-navbar-item',
+          type: 'custom-conditionalItem',
           label: 'Randomizer',
           to: [
             '/docs/ship-of-harkinian/randomizer/',
@@ -112,7 +112,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          type: 'custom-conditional-navbar-item',
+          type: 'custom-conditionalItem',
           label: 'Mod Development',
           to: [
             '/docs/ship-of-harkinian/mod-development/',
@@ -125,7 +125,7 @@ const config: Config = {
           position: 'left',
         },
         {
-          type: 'custom-conditional-navbar-item',
+          type: 'custom-conditionalItem',
           label: 'Github',
           graphic: 'navbar-github-link',
           href: [
@@ -141,7 +141,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          type: 'custom-conditional-navbar-item',
+          type: 'custom-conditionalItem',
           label: 'Discord',
           graphic: 'navbar-discord-link',
           href: [
@@ -155,7 +155,7 @@ const config: Config = {
           position: 'right',
         },
         {
-          type: 'custom-conditional-navbar-item',
+          type: 'custom-conditionalItem',
           label: 'Mod Library',
           graphic: 'navbar-gamebanana-link',
           href: [

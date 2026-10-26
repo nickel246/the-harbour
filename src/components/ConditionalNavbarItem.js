@@ -1,7 +1,10 @@
 import React from 'react';
 import { useLocation } from '@docusaurus/router';
+import { useWindowSize } from '@docusaurus/theme-common';
 import Link from '@docusaurus/Link';
 import IconExternalLink from '@theme/Icon/ExternalLink';
+import DefaultNavbarItem from '@theme/NavbarItem/DefaultNavbarItem';
+import DefaultNavbarItemMobile from '@theme/NavbarItem/DefaultNavbarItem/Mobile';
 
 /*
 Required props:
@@ -19,7 +22,7 @@ If showIn and to/href are arrays, then the navbar item will display the to/href 
 For example, if showIn = ['one', 'two'] and to = ['oneLink', 'twoLink'], then the navbar item will display 'oneLink' when the user is
 on a page with 'one' in the path, and 'twoLink' when the user is on a page with 'two' in the path.
 */
-export default function ConditionalNavbarItem({ label, graphic, to, href, showIn }) {
+export default function ConditionalNavbarItem({ label, graphic, to, href, showIn, mobile }) {
     const currLocation = useLocation().pathname;
 
     let locationIndex = -1;
@@ -42,42 +45,30 @@ export default function ConditionalNavbarItem({ label, graphic, to, href, showIn
     if (to) { // if called with "to", render as standard item
         toFinal = (typeof to === 'string') ? to : to[locationIndex];
         isActive = currLocation.includes(toFinal)
-
-        return (
-            <Link 
-                // render navbar item; render as active if already in destination dir
-                className={`navbar__item navbar__link ${isActive ? 'navbar__link--active' : ''}`}
-                to={toFinal} >
-                {label}
-            </Link>
-        );
+        return ( <DefaultNavbarItem to={toFinal} label={label} mobile={mobile} /> )
     }
     else if (href) { // if called with "href", render as external link
         hrefFinal = (typeof href === 'string') ? href : href[locationIndex];
         if (graphic) {
+            if (mobile) {
+                return (
+                    <DefaultNavbarItem 
+                        className={graphic + "-mobile"} 
+                        href={hrefFinal} 
+                        label={<span class="navbar-label-mobile">{label}</span>}
+                        mobile={mobile} 
+                    />
+                );
+            }
             return (
-                <div class="tooltip">
-                <Link 
-                    // render navbar item; render as active if already in destination dir
-                    className={`navbar__item navbar__link ${graphic ? graphic : ''}`}
-                    href={hrefFinal} >
-                    {graphic ? '' :label}
-                    {graphic ? '' : <IconExternalLink {...{width: 12, height: 12}} />}
-                </Link>
+                <div class= "tooltip">
+                <DefaultNavbarItem className={graphic} href={hrefFinal} mobile={mobile} />
                 <span class="tooltiptext">{label}</span> </div>
             );
         }
-        else {
-            return (
-                <Link 
-                    // render navbar item; render as active if already in destination dir
-                    className={'navbar__item navbar__link'}
-                    href={hrefFinal} >
-                    {label}
-                    <IconExternalLink {...{width: 12, height: 12}} />
-                </Link>
-            );
-        }
+        return (
+            <DefaultNavbarItem href={hrefFinal} label={label} mobile={mobile} />
+        );
     }
     return null; // don't render item if neither "to" or "href" is defined
 }

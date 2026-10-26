@@ -3,5 +3,5 @@ import ConditionalNavbarItem from '@site/src/components/ConditionalNavbarItem';
 
 export default {
   ...ComponentTypes,
-  'custom-conditional-navbar-item': ConditionalNavbarItem,
+  'custom-conditionalItem': ConditionalNavbarItem,
 };
