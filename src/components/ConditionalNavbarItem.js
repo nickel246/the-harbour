@@ -40,18 +40,16 @@ export default function ConditionalNavbarItem({ label, graphic, to, href, showIn
 
     let toFinal = null;
     let hrefFinal = null;
-    let isActive = false;
 
     if (to) { // if called with "to", render as standard item
         toFinal = (typeof to === 'string') ? to : to[locationIndex];
-        isActive = currLocation.includes(toFinal)
         return ( <DefaultNavbarItem to={toFinal} label={label} mobile={mobile} /> )
     }
     else if (href) { // if called with "href", render as external link
         hrefFinal = (typeof href === 'string') ? href : href[locationIndex];
         if (graphic) {
             if (mobile) {
-                return (
+                return ( // on mobile view
                     <DefaultNavbarItem 
                         className={graphic + "-mobile"} 
                         href={hrefFinal} 
@@ -60,13 +58,14 @@ export default function ConditionalNavbarItem({ label, graphic, to, href, showIn
                     />
                 );
             }
-            return (
+            return ( // on desktop view
                 <div class= "tooltip">
-                <DefaultNavbarItem className={graphic} href={hrefFinal} mobile={mobile} />
-                <span class="tooltiptext">{label}</span> </div>
+                    <DefaultNavbarItem className={graphic} href={hrefFinal} mobile={mobile} />
+                    <span class="tooltiptext">{label}</span> 
+                </div>
             );
         }
-        return (
+        return ( // no graphic
             <DefaultNavbarItem href={hrefFinal} label={label} mobile={mobile} />
         );
     }
