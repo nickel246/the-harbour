@@ -6,11 +6,13 @@ description: "The go-to PC Port For The Legend of Zelda: Ocarina of Time"
 sidebar_position: 1
 ---
 
-import sohLogo from '/img/port-logos/soh_darkmode.png'
+import ThemedImage from '@theme/ThemedImage';
+import sohLogoLight from '/img/port-logos/soh_lightmode.png'
+import sohLogoDark from '/img/port-logos/soh_darkmode.png'
 import ModDevelopment from '../mod-development/_mod_development.md'
 
 <div class="text--center"> 
-    <img src={sohLogo} alt="Ship of Harkinian" width="600" />
+    <ThemedImage alt="Docusaurus themed image" width="60%" sources={{ light: sohLogoLight, dark: sohLogoDark }} />
 </div>
 
 ## General Info and Resources

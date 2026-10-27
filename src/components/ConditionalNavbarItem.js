@@ -1,15 +1,11 @@
 import React from 'react';
 import { useLocation } from '@docusaurus/router';
-import { useWindowSize } from '@docusaurus/theme-common';
-import Link from '@docusaurus/Link';
-import IconExternalLink from '@theme/Icon/ExternalLink';
 import DefaultNavbarItem from '@theme/NavbarItem/DefaultNavbarItem';
-import DefaultNavbarItemMobile from '@theme/NavbarItem/DefaultNavbarItem/Mobile';
 
 /*
 Required props:
 - label - string: text to display in navbar item
-- ?graphic - string: css class to display a graphic in place of text.  Check out some of the navbar items in custom.css for examples
+- graphic? - string: css class to display a graphic in place of text.  Check out some of the navbar items in custom.css for examples
 - One of:
     to - string or array of strings*: internal path (ie doc) to navigate to when on the corresponding page
     href - string or array of strings*: external link (github, discord, etc.) to navigate to when on the corresponding page
@@ -43,7 +39,7 @@ export default function ConditionalNavbarItem({ label, graphic, to, href, showIn
 
     if (to) { // if called with "to", render as standard item
         toFinal = (typeof to === 'string') ? to : to[locationIndex];
-        return ( <DefaultNavbarItem to={toFinal} label={label} mobile={mobile} /> )
+        return <DefaultNavbarItem to={toFinal} label={label} mobile={mobile} />;
     }
     else if (href) { // if called with "href", render as external link
         hrefFinal = (typeof href === 'string') ? href : href[locationIndex];
@@ -65,9 +61,8 @@ export default function ConditionalNavbarItem({ label, graphic, to, href, showIn
                 </div>
             );
         }
-        return ( // no graphic
-            <DefaultNavbarItem href={hrefFinal} label={label} mobile={mobile} />
-        );
+        // no graphic
+        return <DefaultNavbarItem href={hrefFinal} label={label} mobile={mobile} />;
     }
     return null; // don't render item if neither "to" or "href" is defined
 }
