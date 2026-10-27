@@ -58,6 +58,21 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        fromExtensions: ['html'],
+        createRedirects(existingPath) {
+          if (existingPath.includes('/ship-of-harkinian/mod-development')) {
+            // Redirect from /zship-modding/x to /ship-of-harkinian/mod-development/x
+            return (
+              existingPath.replace('/ship-of-harkinian/mod-development', '/zship-modding')
+            );
+          }
+          return undefined; // Return a falsy value: no redirect created
+        },
+      },
+    ],
   ],
 
   themeConfig: {
