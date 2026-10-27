@@ -58,16 +58,17 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+  ],
+
+  plugins: [
     [
       '@docusaurus/plugin-client-redirects',
       {
         fromExtensions: ['html'],
         createRedirects(routePath:string) {
-          if (routePath.includes('/zship-modding')) {
+          if (routePath.includes('/ship-of-harkinian/mod-development')) {
             // Redirect from /zship-modding/x to /ship-of-harkinian/mod-development/x
-            return (
-              routePath.replace('/zship-modding', '/ship-of-harkinian/mod-development')
-            );
+            return routePath.replace('/ship-of-harkinian/mod-development', '/zship-modding')
           }
           return undefined; // Return a falsy value: no redirect created
         },
