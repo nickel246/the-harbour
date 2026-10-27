@@ -63,7 +63,7 @@ const config: Config = {
       {
         fromExtensions: ['html'],
         createRedirects(routePath:string) {
-          if (routePath.includes('/ship-of-harkinian/mod-development')) {
+          if (routePath.includes('/zship-modding')) {
             // Redirect from /zship-modding/x to /ship-of-harkinian/mod-development/x
             return (
               routePath.replace('/zship-modding', '/ship-of-harkinian/mod-development')
