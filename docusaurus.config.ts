@@ -65,6 +65,12 @@ const config: Config = {
       '@docusaurus/plugin-client-redirects',
       {
         fromExtensions: ['html'],
+        redirects: [
+          {
+            to: '/docs/ship-of-harkinian/info/',
+            from: '/docs/ship-of-harkinian/',
+          },
+        ],
         createRedirects(routePath:string) {
           if (routePath.includes('/ship-of-harkinian/mod-development')) {
             // Redirect from /zship-modding/x to /ship-of-harkinian/mod-development/x
