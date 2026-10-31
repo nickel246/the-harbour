@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from '@docusaurus/router';
 import DefaultNavbarItem from '@theme/NavbarItem/DefaultNavbarItem';
+import {useWindowSize} from '@docusaurus/theme-common';
 
 /*
 Required props:
@@ -44,7 +45,7 @@ export default function ConditionalNavbarItem({ label, graphic, to, href, showIn
     else if (href) { // if called with "href", render as external link
         hrefFinal = (typeof href === 'string') ? href : href[locationIndex];
         if (graphic) {
-            if (mobile) {
+            if (useWindowSize() === "mobile") {
                 return ( // on mobile view
                     <DefaultNavbarItem 
                         className={graphic + "-mobile"} 
