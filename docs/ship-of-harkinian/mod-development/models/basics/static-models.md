@@ -24,7 +24,9 @@ For example, say I wanted to import the Razor Sword’s blade from MM.  I’d fi
 
 and enter that information into Fast64.  For the DL I would enter `gRazorSwordBladeDL` and for the Object I would enter `gameplay_keep`.
 
-<img src={importing} alt="Fast64 DL Importer" width="700" />
+<div class="text--center">
+    <img src={importing} alt="Fast64 DL Importer" width="700" />
+</div>
 
 Note that some meshes like the mirror shield (in either game) normally have multiple layers of triangles on top of each other, but when importing only have one.  If this happens, uncheck the box labeled “Remove Doubles” and reimport.
 
@@ -38,7 +40,9 @@ Now with your object renamed, move back to the DL Exporter.  Below the "Export D
 Internal Path refers to the directory the DL belongs in as listed in the asset guide.  For example, if I wanted to export `gRazorSwordBladeDL`, I would set the internal path to `objects/gameplay_keep`.  
 Path refers to the directory on your computer that you would like to export your files to.  This can be wherever you want, but for whatever directory you choose, make a new folder in there, name it `alt`, and select that folder.  When you're done your export box should look something like this:
 
-<img src={exporting} alt="Exporting DLs" />
+<div class="text--center">
+    <img src={exporting} alt="Exporting DLs" width="600"/>
+</div>
 
 Optionally you can also select the "Optimize + Inline Materials" option if you want cleaner exports.  Note that this will break dynamic color support if you have that set up.
 

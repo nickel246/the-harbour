@@ -64,7 +64,7 @@ Start by clicking on the bright green “Code” button and select “Download Z
 Now, open up Blender, and on the top bar click on “Edit” → “Preferences”
 
 <div class="text--center"> 
-  <img src={preferences} alt="Opening Preferences" width="50%" />
+  <img src={preferences} alt="Opening Preferences" width="500" />
 </div>
 
 Next, navigate to the “Add-ons” tab and in the top right either hit “Install” or the small dropdown button then “Install from Disk”, depending on your blender version.  
@@ -80,13 +80,13 @@ Here in the Fas64 Global Settings you can change your game depending on the port
 Another useful setting here is the “Prefer RGBA Over CI”.  As you set textures, Fast64 tries to auto pick the most appropriate texture types, which sometimes might not be what you want, like in the case of the CI format which is really only useful for those who want to stay faithful to N64 limitations.  By contrast, the RGBA formats are the typical full color formats you would expect, so those might be preferable for your purposes.  For more information on texture formats, see the [section at the bottom of this page](#texture-formats).
 
 <div class="text--center"> 
-  <img src={f64_global} alt="Fast64 Global Settings" width="50%" />
+  <img src={f64_global} alt="Fast64 Global Settings" width="500" />
 </div>
 
 The other useful settings are here in the F3D Material Converter, where you can automatically convert standard materials into the F3D Materials that the ports use.  You can also recreate your materials or reload material presets if they seem bugged.
 
 <div class="text--center"> 
-  <img src={f3d_converter} alt="F3D Material Converter" width="50%" />
+  <img src={f3d_converter} alt="F3D Material Converter" width="500" />
 </div>
 
 ### Z64 Tab
@@ -97,7 +97,7 @@ Here in the Workplace Settings is where you complete the setup for importing ass
 If you want to use a source O2R for importing, Start by clicking the "Use O2R Import" checkbox, then select the file icon in the O2R Path box and navigate to your OoT or MM source O2R (oot.o2r, oot_mq.o2r, mm.o2r).  You can ignore the “Game Version” box.  If you selected a MM O2R then also go down and select the “Enable MM Features” checkbox.  
 
 <div class="text--center"> 
-  <img src={workspace_settings} alt="Workspace Settings" width="50%" />
+  <img src={workspace_settings} alt="Workspace Settings" width="500" />
 </div>
 
 If you want to use a decomp of OoT or MM for importing, leave "Use O2R Import" checked and in the Decomp Path box navigate to the root of your decompilation (either `oot` or `mm`).  If you selected a Majora's Mask decomp, select the "Enable MM Features" checkbox.  Finally, click on the "Game Version" dropdown and select the rom version that you decompiled.
@@ -124,7 +124,7 @@ If you want to play around with more specific settings, you can uncheck the "Sho
 As of SoH version 9.3.0 and 2Ship version 5.0.0 you can now add your materials to the in-game cosmetic editor to be recolored by the player.  To set this up, all you need to do is use Primitive Color and/or Environment Color in your material, and below where you would normally set the color you want you will see a checkbox labeled "Dynamic Cosmetic Entry".  Select this option and enter a name for your entry as well as a name for the category you want it to appear in.  These can be whatever you want so long as no two names are the same.
 
 <div class="text--center"> 
-  <img src={cosmetic_entry} alt="Making a Dynamic Cosmetic Entry" width="50%" />
+  <img src={cosmetic_entry} alt="Making a Dynamic Cosmetic Entry" width="500" />
 </div>
 
 It is recommended to only use this feature if your material does not use a colored texture.

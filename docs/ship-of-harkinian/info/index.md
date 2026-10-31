@@ -12,7 +12,7 @@ import sohLogoDark from '/img/port-logos/soh_darkmode.png'
 import ModDevelopment from '../mod-development/_mod_development.md'
 
 <div class="text--center"> 
-    <ThemedImage alt="Docusaurus themed image" width="60%" sources={{ light: sohLogoLight, dark: sohLogoDark }} />
+    <ThemedImage alt="Docusaurus themed image" width="600" sources={{ light: sohLogoLight, dark: sohLogoDark }} />
 </div>
 
 ## General Info and Resources
